@@ -336,13 +336,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     hardware/nxp/nfc/pn8x/halimpl/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
 
-# OnePlus
-PRODUCT_PACKAGES += \
-    oneplus-fwk
-
-PRODUCT_BOOT_JARS += \
-    oneplus-fwk
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
@@ -463,9 +456,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
